@@ -1,0 +1,3576 @@
+Eval in Emacs: (lsp-bridge--first-start '55825)
+(AutoLog) Called: ThreadingEPCHandler.setup()
+(AutoLog) Returns: ThreadingEPCHandler.setup(...) = None
+(AutoLog) Called: ThreadingEPCHandler.handle()
+receiving...
+received: length = 80; data = b'(call 199 change_cursor ("/home/kevin/Desktop/test.py" (:line 3 :character 0)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 199 change_cursor ("/home/kevin/Desktop/test.py" (:line 3 :character 0)))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(199, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 3, Symbol(':character'), 0]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 199, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 199, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+Eval in Emacs: (message '"[LSP-Bridge] Start LSP server (pyright) for /home/kevin/Desktop/test.py...")
+Handlers: [<class 'core.handler.completion.Completion'>,
+ <class 'core.handler.find_define.FindDefine'>,
+ <class 'core.handler.find_implementation.FindImplementation'>,
+ <class 'core.handler.find_references.FindReferences'>,
+ <class 'core.handler.hover.Hover'>,
+ <class 'core.handler.signature_help.SignatureHelp'>,
+ <class 'core.handler.prepare_rename.PrepareRename'>,
+ <class 'core.handler.rename.Rename'>,
+ <class 'core.handler.jdt_uri_resolver.JDTUriResolver'>]
+
+--- Send (37564): initialize
+{
+   "id": 37564,
+   "method": "initialize",
+   "params": {
+      "processId": 179035,
+      "rootPath": "/home/kevin/Desktop/test.py",
+      "clientInfo": {
+         "name": "emacs",
+         "version": "GNU Emacs 29.0.50 (build 1, x86_64-pc-linux-gnu, GTK+ Version 3.24.33, cairo version 1.17.6)\n of 2022-05-10"
+      },
+      "rootUri": "file:///home/kevin/Desktop/test.py",
+      "capabilities": {
+         "workspace": {
+            "applyEdit": false,
+            "executeCommand": {
+               "dynamicRegistration": false
+            },
+            "workspaceEdit": {
+               "documentChanges": false
+            },
+            "didChangeWatchedFiles": {
+               "dynamicRegistration": false
+            },
+            "symbol": {
+               "dynamicRegistration": false
+            },
+            "configuration": true,
+            "workspaceFolders": false
+         },
+         "textDocument": {
+            "synchronization": {
+               "dynamicRegistration": false,
+               "willSave": false,
+               "willSaveWaitUntil": false,
+               "didSave": true
+            },
+            "completion": {
+               "dynamicRegistration": false,
+               "completionItem": {
+                  "snippetSupport": true,
+                  "deprecatedSupport": true,
+                  "tagSupport": {
+                     "valueSet": [
+                        1
+                     ]
+                  }
+               },
+               "contextSupport": true
+            },
+            "hover": {
+               "dynamicRegistration": false,
+               "contentFormat": [
+                  "markdown",
+                  "plaintext"
+               ]
+            },
+            "signatureHelp": {
+               "dynamicRegistration": false,
+               "signatureInformation": {
+                  "parameterInformation": {
+                     "labelOffsetSupport": false
+                  },
+                  "activeParameterSupport": false
+               }
+            },
+            "references": {
+               "dynamicRegistration": false
+            },
+            "definition": {
+               "dynamicRegistration": false,
+               "linkSupport": true
+            },
+            "declaration": {
+               "dynamicRegistration": false,
+               "linkSupport": true
+            },
+            "implementation": {
+               "dynamicRegistration": false,
+               "linkSupport": true
+            },
+            "typeDefinition": {
+               "dynamicRegistration": false,
+               "linkSupport": true
+            },
+            "documentSymbol": {
+               "dynamicRegistration": false,
+               "hierarchicalDocumentSymbolSupport": false,
+               "symbolKind": {
+                  "valueSet": [
+                     1,
+                     2,
+                     3,
+                     4,
+                     5,
+                     6,
+                     7,
+                     8,
+                     9,
+                     10,
+                     11,
+                     12,
+                     13,
+                     14,
+                     15,
+                     16,
+                     17,
+                     18,
+                     19,
+                     20,
+                     21,
+                     22,
+                     23,
+                     24,
+                     25,
+                     26
+                  ]
+               }
+            },
+            "documentHighlight": {
+               "dynamicRegistration": false
+            },
+            "codeAction": {
+               "dynamicRegistration": false,
+               "codeActionLiteralSupport": {
+                  "codeActionKind": {
+                     "valueSet": [
+                        "quickfix",
+                        "refactor",
+                        "refactor.extract",
+                        "refactor.inline",
+                        "refactor.rewrite",
+                        "source",
+                        "source.organizeImports"
+                     ]
+                  }
+               },
+               "isPreferredSupport": false
+            },
+            "formatting": {
+               "dynamicRegistration": false
+            },
+            "rangeFormatting": {
+               "dynamicRegistration": false
+            },
+            "rename": {
+               "dynamicRegistration": false
+            },
+            "publishDiagnostics": {
+               "relatedInformation": false,
+               "codeDescriptionSupport": false,
+               "tagSupport": {
+                  "valueSet": [
+                     1,
+                     2
+                  ]
+               }
+            }
+         },
+         "experimental": {}
+      },
+      "initializationOptions": {}
+   },
+   "jsonrpc": "2.0"
+}
+received: length = 81; data = b'(call 200 change_cursor ("/home/kevin/Desktop/test.py" (:line 4 :character 11)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 200 change_cursor ("/home/kevin/Desktop/test.py" (:line 4 :character 11)))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(200, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 4, Symbol(':character'), 11]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 200, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 200, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+receiving...
+received: length = 81; data = b'(call 201 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 18)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 201 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 18)))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(201, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 5, Symbol(':character'), 18]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 201, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 201, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 81; data = b'(call 202 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 13)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 202 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 13)))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(202, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 13]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 202, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 202, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "Pyright language server 1.1.247 starting"
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "Server root directory: /tmp/pyright-python-langserver.kevin/node_modules/pyright/dist/"
+   }
+}
+
+--- Recv response (37564)
+{
+   "jsonrpc": "2.0",
+   "id": 37564,
+   "result": {
+      "capabilities": {
+         "textDocumentSync": 2,
+         "definitionProvider": {
+            "workDoneProgress": true
+         },
+         "declarationProvider": {
+            "workDoneProgress": true
+         },
+         "typeDefinitionProvider": {
+            "workDoneProgress": true
+         },
+         "referencesProvider": {
+            "workDoneProgress": true
+         },
+         "documentSymbolProvider": {
+            "workDoneProgress": true
+         },
+         "workspaceSymbolProvider": {
+            "workDoneProgress": true
+         },
+         "hoverProvider": {
+            "workDoneProgress": true
+         },
+         "documentHighlightProvider": {
+            "workDoneProgress": true
+         },
+         "renameProvider": {
+            "prepareProvider": true,
+            "workDoneProgress": true
+         },
+         "completionProvider": {
+            "triggerCharacters": [
+               ".",
+               "["
+            ],
+            "resolveProvider": true,
+            "workDoneProgress": true
+         },
+         "signatureHelpProvider": {
+            "triggerCharacters": [
+               "(",
+               ",",
+               ")"
+            ],
+            "workDoneProgress": true
+         },
+         "codeActionProvider": {
+            "codeActionKinds": [
+               "quickfix",
+               "source.organizeImports"
+            ],
+            "workDoneProgress": true
+         },
+         "executeCommandProvider": {
+            "commands": [],
+            "workDoneProgress": true
+         },
+         "callHierarchyProvider": true
+      }
+   }
+}
+**** {'name': 'pyright', 'languageId': 'python', 'command': ['/home/kevin/miniconda3/envs/py39/bin/pyright-langserver', '--stdio'], 'settings': {'analysis': {'autoImportCompletions': True, 'typeshedPaths': [], 'stubPath': '', 'useLibraryCodeForTypes': True, 'diagnosticMode': 'openFilesOnly', 'typeCheckingMode': 'basic', 'logLevel': 'verbose', 'autoSearchPaths': True, 'extraPaths': []}, 'pythonPath': '/usr/bin/python', 'venvPath': ''}}
+
+--- Send (notification): initialized
+{
+   "method": "initialized",
+   "params": {},
+   "jsonrpc": "2.0"
+}
+
+--- Send (notification): workspace/didChangeConfiguration
+Eval in Emacs: (message '"[LSP-Bridge] Start LSP server (pyright) for /home/kevin/Desktop/test.py complete, enjoy hacking!")
+{
+   "method": "workspace/didChangeConfiguration",
+   "params": {
+      "settings": {
+         "analysis": {
+            "autoImportCompletions": true,
+            "typeshedPaths": [],
+            "stubPath": "",
+            "useLibraryCodeForTypes": true,
+            "diagnosticMode": "openFilesOnly",
+            "typeCheckingMode": "basic",
+            "logLevel": "verbose",
+            "autoSearchPaths": true,
+            "extraPaths": []
+         },
+         "pythonPath": "/usr/bin/python",
+         "venvPath": ""
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Send (notification): textDocument/didOpen
+{
+   "method": "textDocument/didOpen",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "languageId": "python",
+         "version": 0,
+         "text": "from osgeo import gdal\nimport skimage.io as ski\nimport numpy as np\n\ndef test():\n    xx = np.array([1,2,3])\n    return xx\n\nif __name__ == '__main__':\n    ski.imread()\n    nn.Conv2d()\n    \n"
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Recv request (0): workspace/configuration
+{
+   "jsonrpc": "2.0",
+   "id": 0,
+   "method": "workspace/configuration",
+   "params": {
+      "items": [
+         {
+            "scopeUri": "",
+            "section": "python"
+         }
+      ]
+   }
+}
+
+--- Send (0): response
+{
+   "id": 0,
+   "result": [
+      {}
+   ],
+   "jsonrpc": "2.0"
+}
+
+--- Recv request (1): workspace/configuration
+{
+   "jsonrpc": "2.0",
+   "id": 1,
+   "method": "workspace/configuration",
+   "params": {
+      "items": [
+         {
+            "scopeUri": "",
+            "section": "python.analysis"
+         }
+      ]
+   }
+}
+
+--- Send (1): response
+{
+   "id": 1,
+   "result": [
+      {}
+   ],
+   "jsonrpc": "2.0"
+}
+
+--- Recv request (2): workspace/configuration
+{
+   "jsonrpc": "2.0",
+   "id": 2,
+   "method": "workspace/configuration",
+   "params": {
+      "items": [
+         {
+            "scopeUri": "",
+            "section": "pyright"
+         }
+      ]
+   }
+}
+
+--- Send (2): response
+{
+   "id": 2,
+   "result": [
+      {}
+   ],
+   "jsonrpc": "2.0"
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "No configuration file found."
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "No pyproject.toml file found."
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 2,
+      "message": "stubPath /home/kevin/Desktop/test.py/typings is not a valid directory."
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "Assuming Python platform Linux"
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "Searching for source files"
+   }
+}
+
+--- Recv notification: window/logMessage
+{
+   "jsonrpc": "2.0",
+   "method": "window/logMessage",
+   "params": {
+      "type": 3,
+      "message": "Found 1 source file"
+   }
+}
+received: length = 81; data = b'(call 203 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 18)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 203 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 18)))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(203, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 5, Symbol(':character'), 18]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 203, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 203, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 81; data = b'(call 204 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 26)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 204 change_cursor ("/home/kevin/Desktop/test.py" (:line 5 :character 26)))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(204, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 5, Symbol(':character'), 26]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 204, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 204, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Recv notification: textDocument/publishDiagnostics
+received: length = 139; data = b'(call 205 change_file ("/home/kevin/Desktop/test.py" (:line 5 :character 26) (:line 5 :character 26) 0 "\n" (:line 6 :character 0) "\n" ""))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 205 change_file ("/home/kevin/Desktop/test.py" (:line 5 :character 26) (:line 5 :character 26) 0 "\n" (:line 6 :character 0) "\n" ""))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(205, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 5, Symbol(':character'), 26], [Symbol(':line'), 5, Symbol(':character'), 26], 0, '\n', [Symbol(':line'), 6, Symbol(':character'), 0], '\n', ''])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 205, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 205, None)
+
+--- Send (notification): textDocument/didChange
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+received: length = 144; data = b'(call 206 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 0) (:line 6 :character 0) 0 "    " (:line 6 :character 4) " " "    "))\n'
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 1
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 5,
+                  "character": 26
+               },
+               "end": {
+                  "line": 5,
+                  "character": 26
+               }
+            },
+            "rangeLength": 0,
+            "text": "\n"
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 206 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 0) (:line 6 :character 0) 0 "    " (:line 6 :character 4) " " "    "))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(206, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 0], [Symbol(':line'), 6, Symbol(':character'), 0], 0, '    ', [Symbol(':line'), 6, Symbol(':character'), 4], ' ', '    '])
+received: length = 80; data = b'(call 207 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 4)))\n'
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 206, None]
+
+--- Send (notification): textDocument/didChange
+(AutoLog) Called: ThreadingEPCHandler._send('return', 206, None)
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 207 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 4)))\n')
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 2
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 6,
+                  "character": 0
+               },
+               "end": {
+                  "line": 6,
+                  "character": 0
+               }
+            },
+            "rangeLength": 0,
+            "text": "    "
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(207, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 4]])
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 207, None]
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._send('return', 207, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Send (37661): textDocument/completion
+{
+   "id": 37661,
+   "method": "textDocument/completion",
+   "params": {
+      "position": {
+         "line": 6,
+         "character": 4
+      },
+      "context": {
+         "triggerKind": 1
+      },
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py"
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Recv response (37661): textDocument/completion
+{
+   "jsonrpc": "2.0",
+   "id": 37661,
+   "result": {
+      "items": [
+         {
+            "label": "xx",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "xx"
+            },
+            "sortText": "09.9999.xx"
+         },
+         {
+            "label": "__doc__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__doc__"
+            },
+            "sortText": "11.9999.__doc__"
+         },
+         {
+            "label": "__name__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__name__"
+            },
+            "sortText": "11.9999.__name__"
+         },
+         {
+            "label": "__qualname__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__qualname__"
+            },
+            "sortText": "11.9999.__qualname__"
+         },
+         {
+            "label": "__loader__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__loader__"
+            },
+            "sortText": "11.9999.__loader__"
+         },
+         {
+            "label": "__package__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__package__"
+            },
+            "sortText": "11.9999.__package__"
+         },
+         {
+            "label": "__spec__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__spec__"
+            },
+            "sortText": "11.9999.__spec__"
+         },
+         {
+            "label": "__path__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__path__"
+            },
+            "sortText": "11.9999.__path__"
+         },
+         {
+            "label": "__file__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__file__"
+            },
+            "sortText": "11.9999.__file__"
+         },
+         {
+            "label": "__cached__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__cached__"
+            },
+            "sortText": "11.9999.__cached__"
+         },
+         {
+            "label": "__dict__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__dict__"
+            },
+            "sortText": "11.9999.__dict__"
+         },
+         {
+            "label": "__annotations__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__annotations__"
+            },
+            "sortText": "11.9999.__annotations__"
+         },
+         {
+            "label": "__builtins__",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__builtins__"
+            },
+            "sortText": "11.9999.__builtins__"
+         },
+         {
+            "label": "gdal",
+            "kind": 9,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "gdal"
+            },
+            "sortText": "09.9999.gdal"
+         },
+         {
+            "label": "ski",
+            "kind": 9,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ski"
+            },
+            "sortText": "09.9999.ski"
+         },
+         {
+            "label": "np",
+            "kind": 9,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "np"
+            },
+            "sortText": "09.9999.np"
+         },
+         {
+            "label": "test",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "test"
+            },
+            "sortText": "09.9999.test"
+         },
+         {
+            "label": "object",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "object"
+            },
+            "sortText": "09.9999.object"
+         },
+         {
+            "label": "staticmethod",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "staticmethod"
+            },
+            "sortText": "09.9999.staticmethod"
+         },
+         {
+            "label": "classmethod",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "classmethod"
+            },
+            "sortText": "09.9999.classmethod"
+         },
+         {
+            "label": "type",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "type"
+            },
+            "sortText": "09.9999.type"
+         },
+         {
+            "label": "super",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "super"
+            },
+            "sortText": "09.9999.super"
+         },
+         {
+            "label": "int",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "int"
+            },
+            "sortText": "09.9999.int"
+         },
+         {
+            "label": "float",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "float"
+            },
+            "sortText": "09.9999.float"
+         },
+         {
+            "label": "complex",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "complex"
+            },
+            "sortText": "09.9999.complex"
+         },
+         {
+            "label": "str",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "str"
+            },
+            "sortText": "09.9999.str"
+         },
+         {
+            "label": "bytes",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "bytes"
+            },
+            "sortText": "09.9999.bytes"
+         },
+         {
+            "label": "bytearray",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "bytearray"
+            },
+            "sortText": "09.9999.bytearray"
+         },
+         {
+            "label": "memoryview",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "memoryview"
+            },
+            "sortText": "09.9999.memoryview"
+         },
+         {
+            "label": "bool",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "bool"
+            },
+            "sortText": "09.9999.bool"
+         },
+         {
+            "label": "slice",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "slice"
+            },
+            "sortText": "09.9999.slice"
+         },
+         {
+            "label": "tuple",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "tuple"
+            },
+            "sortText": "09.9999.tuple"
+         },
+         {
+            "label": "function",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "function"
+            },
+            "sortText": "09.9999.function"
+         },
+         {
+            "label": "list",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "list"
+            },
+            "sortText": "09.9999.list"
+         },
+         {
+            "label": "dict",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "dict"
+            },
+            "sortText": "09.9999.dict"
+         },
+         {
+            "label": "set",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "set"
+            },
+            "sortText": "09.9999.set"
+         },
+         {
+            "label": "frozenset",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "frozenset"
+            },
+            "sortText": "09.9999.frozenset"
+         },
+         {
+            "label": "enumerate",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "enumerate"
+            },
+            "sortText": "09.9999.enumerate"
+         },
+         {
+            "label": "range",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "range"
+            },
+            "sortText": "09.9999.range"
+         },
+         {
+            "label": "property",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "property"
+            },
+            "sortText": "09.9999.property"
+         },
+         {
+            "label": "NotImplemented",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "NotImplemented"
+            },
+            "sortText": "09.9999.NotImplemented"
+         },
+         {
+            "label": "abs",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "abs"
+            },
+            "sortText": "09.9999.abs"
+         },
+         {
+            "label": "all",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "all"
+            },
+            "sortText": "09.9999.all"
+         },
+         {
+            "label": "any",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "any"
+            },
+            "sortText": "09.9999.any"
+         },
+         {
+            "label": "ascii",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ascii"
+            },
+            "sortText": "09.9999.ascii"
+         },
+         {
+            "label": "bin",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "bin"
+            },
+            "sortText": "09.9999.bin"
+         },
+         {
+            "label": "breakpoint",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "breakpoint"
+            },
+            "sortText": "09.9999.breakpoint"
+         },
+         {
+            "label": "callable",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "callable"
+            },
+            "sortText": "09.9999.callable"
+         },
+         {
+            "label": "chr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "chr"
+            },
+            "sortText": "09.9999.chr"
+         },
+         {
+            "label": "aiter",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "aiter"
+            },
+            "sortText": "09.9999.aiter"
+         },
+         {
+            "label": "anext",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "anext"
+            },
+            "sortText": "09.9999.anext"
+         },
+         {
+            "label": "compile",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "compile"
+            },
+            "sortText": "09.9999.compile"
+         },
+         {
+            "label": "copyright",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "copyright"
+            },
+            "sortText": "09.9999.copyright"
+         },
+         {
+            "label": "credits",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "credits"
+            },
+            "sortText": "09.9999.credits"
+         },
+         {
+            "label": "delattr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "delattr"
+            },
+            "sortText": "09.9999.delattr"
+         },
+         {
+            "label": "dir",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "dir"
+            },
+            "sortText": "09.9999.dir"
+         },
+         {
+            "label": "divmod",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "divmod"
+            },
+            "sortText": "09.9999.divmod"
+         },
+         {
+            "label": "eval",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "eval"
+            },
+            "sortText": "09.9999.eval"
+         },
+         {
+            "label": "exec",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "exec"
+            },
+            "sortText": "09.9999.exec"
+         },
+         {
+            "label": "exit",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "exit"
+            },
+            "sortText": "09.9999.exit"
+         },
+         {
+            "label": "filter",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "filter"
+            },
+            "sortText": "09.9999.filter"
+         },
+         {
+            "label": "format",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "format"
+            },
+            "sortText": "09.9999.format"
+         },
+         {
+            "label": "getattr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "getattr"
+            },
+            "sortText": "09.9999.getattr"
+         },
+         {
+            "label": "globals",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "globals"
+            },
+            "sortText": "09.9999.globals"
+         },
+         {
+            "label": "hasattr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "hasattr"
+            },
+            "sortText": "09.9999.hasattr"
+         },
+         {
+            "label": "hash",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "hash"
+            },
+            "sortText": "09.9999.hash"
+         },
+         {
+            "label": "help",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "help"
+            },
+            "sortText": "09.9999.help"
+         },
+         {
+            "label": "hex",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "hex"
+            },
+            "sortText": "09.9999.hex"
+         },
+         {
+            "label": "id",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "id"
+            },
+            "sortText": "09.9999.id"
+         },
+         {
+            "label": "input",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "input"
+            },
+            "sortText": "09.9999.input"
+         },
+         {
+            "label": "iter",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "iter"
+            },
+            "sortText": "09.9999.iter"
+         },
+         {
+            "label": "isinstance",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "isinstance"
+            },
+            "sortText": "09.9999.isinstance"
+         },
+         {
+            "label": "issubclass",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "issubclass"
+            },
+            "sortText": "09.9999.issubclass"
+         },
+         {
+            "label": "len",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "len"
+            },
+            "sortText": "09.9999.len"
+         },
+         {
+            "label": "license",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "license"
+            },
+            "sortText": "09.9999.license"
+         },
+         {
+            "label": "locals",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "locals"
+            },
+            "sortText": "09.9999.locals"
+         },
+         {
+            "label": "map",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "map"
+            },
+            "sortText": "09.9999.map"
+         },
+         {
+            "label": "max",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "max"
+            },
+            "sortText": "09.9999.max"
+         },
+         {
+            "label": "min",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "min"
+            },
+            "sortText": "09.9999.min"
+         },
+         {
+            "label": "next",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "next"
+            },
+            "sortText": "09.9999.next"
+         },
+         {
+            "label": "oct",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "oct"
+            },
+            "sortText": "09.9999.oct"
+         },
+         {
+            "label": "open",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "open"
+            },
+            "sortText": "09.9999.open"
+         },
+         {
+            "label": "ord",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ord"
+            },
+            "sortText": "09.9999.ord"
+         },
+         {
+            "label": "print",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "print"
+            },
+            "sortText": "09.9999.print"
+         },
+         {
+            "label": "pow",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "pow"
+            },
+            "sortText": "09.9999.pow"
+         },
+         {
+            "label": "quit",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "quit"
+            },
+            "sortText": "09.9999.quit"
+         },
+         {
+            "label": "reversed",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "reversed"
+            },
+            "sortText": "09.9999.reversed"
+         },
+         {
+            "label": "repr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "repr"
+            },
+            "sortText": "09.9999.repr"
+         },
+         {
+            "label": "round",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "round"
+            },
+            "sortText": "09.9999.round"
+         },
+         {
+            "label": "setattr",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "setattr"
+            },
+            "sortText": "09.9999.setattr"
+         },
+         {
+            "label": "sorted",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "sorted"
+            },
+            "sortText": "09.9999.sorted"
+         },
+         {
+            "label": "sum",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "sum"
+            },
+            "sortText": "09.9999.sum"
+         },
+         {
+            "label": "vars",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "vars"
+            },
+            "sortText": "09.9999.vars"
+         },
+         {
+            "label": "zip",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "zip"
+            },
+            "sortText": "09.9999.zip"
+         },
+         {
+            "label": "__import__",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__import__"
+            },
+            "sortText": "11.9999.__import__"
+         },
+         {
+            "label": "__build_class__",
+            "kind": 3,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "__build_class__"
+            },
+            "sortText": "11.9999.__build_class__"
+         },
+         {
+            "label": "ellipsis",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ellipsis"
+            },
+            "sortText": "09.9999.ellipsis"
+         },
+         {
+            "label": "Ellipsis",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "Ellipsis"
+            },
+            "sortText": "09.9999.Ellipsis"
+         },
+         {
+            "label": "BaseException",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "BaseException"
+            },
+            "sortText": "09.9999.BaseException"
+         },
+         {
+            "label": "GeneratorExit",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "GeneratorExit"
+            },
+            "sortText": "09.9999.GeneratorExit"
+         },
+         {
+            "label": "KeyboardInterrupt",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "KeyboardInterrupt"
+            },
+            "sortText": "09.9999.KeyboardInterrupt"
+         },
+         {
+            "label": "SystemExit",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "SystemExit"
+            },
+            "sortText": "09.9999.SystemExit"
+         },
+         {
+            "label": "Exception",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "Exception"
+            },
+            "sortText": "09.9999.Exception"
+         },
+         {
+            "label": "StopIteration",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "StopIteration"
+            },
+            "sortText": "09.9999.StopIteration"
+         },
+         {
+            "label": "OSError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "OSError"
+            },
+            "sortText": "09.9999.OSError"
+         },
+         {
+            "label": "EnvironmentError",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "EnvironmentError"
+            },
+            "sortText": "09.9999.EnvironmentError"
+         },
+         {
+            "label": "IOError",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "IOError"
+            },
+            "sortText": "09.9999.IOError"
+         },
+         {
+            "label": "ArithmeticError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ArithmeticError"
+            },
+            "sortText": "09.9999.ArithmeticError"
+         },
+         {
+            "label": "AssertionError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "AssertionError"
+            },
+            "sortText": "09.9999.AssertionError"
+         },
+         {
+            "label": "AttributeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "AttributeError"
+            },
+            "sortText": "09.9999.AttributeError"
+         },
+         {
+            "label": "BufferError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "BufferError"
+            },
+            "sortText": "09.9999.BufferError"
+         },
+         {
+            "label": "EOFError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "EOFError"
+            },
+            "sortText": "09.9999.EOFError"
+         },
+         {
+            "label": "ImportError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ImportError"
+            },
+            "sortText": "09.9999.ImportError"
+         },
+         {
+            "label": "LookupError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "LookupError"
+            },
+            "sortText": "09.9999.LookupError"
+         },
+         {
+            "label": "MemoryError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "MemoryError"
+            },
+            "sortText": "09.9999.MemoryError"
+         },
+         {
+            "label": "NameError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "NameError"
+            },
+            "sortText": "09.9999.NameError"
+         },
+         {
+            "label": "ReferenceError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ReferenceError"
+            },
+            "sortText": "09.9999.ReferenceError"
+         },
+         {
+            "label": "RuntimeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "RuntimeError"
+            },
+            "sortText": "09.9999.RuntimeError"
+         },
+         {
+            "label": "StopAsyncIteration",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "StopAsyncIteration"
+            },
+            "sortText": "09.9999.StopAsyncIteration"
+         },
+         {
+            "label": "SyntaxError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "SyntaxError"
+            },
+            "sortText": "09.9999.SyntaxError"
+         },
+         {
+            "label": "SystemError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "SystemError"
+            },
+            "sortText": "09.9999.SystemError"
+         },
+         {
+            "label": "TypeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "TypeError"
+            },
+            "sortText": "09.9999.TypeError"
+         },
+         {
+            "label": "ValueError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ValueError"
+            },
+            "sortText": "09.9999.ValueError"
+         },
+         {
+            "label": "FloatingPointError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "FloatingPointError"
+            },
+            "sortText": "09.9999.FloatingPointError"
+         },
+         {
+            "label": "OverflowError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "OverflowError"
+            },
+            "sortText": "09.9999.OverflowError"
+         },
+         {
+            "label": "ZeroDivisionError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ZeroDivisionError"
+            },
+            "sortText": "09.9999.ZeroDivisionError"
+         },
+         {
+            "label": "ModuleNotFoundError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ModuleNotFoundError"
+            },
+            "sortText": "09.9999.ModuleNotFoundError"
+         },
+         {
+            "label": "IndexError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "IndexError"
+            },
+            "sortText": "09.9999.IndexError"
+         },
+         {
+            "label": "KeyError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "KeyError"
+            },
+            "sortText": "09.9999.KeyError"
+         },
+         {
+            "label": "UnboundLocalError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnboundLocalError"
+            },
+            "sortText": "09.9999.UnboundLocalError"
+         },
+         {
+            "label": "BlockingIOError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "BlockingIOError"
+            },
+            "sortText": "09.9999.BlockingIOError"
+         },
+         {
+            "label": "ChildProcessError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ChildProcessError"
+            },
+            "sortText": "09.9999.ChildProcessError"
+         },
+         {
+            "label": "ConnectionError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ConnectionError"
+            },
+            "sortText": "09.9999.ConnectionError"
+         },
+         {
+            "label": "BrokenPipeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "BrokenPipeError"
+            },
+            "sortText": "09.9999.BrokenPipeError"
+         },
+         {
+            "label": "ConnectionAbortedError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ConnectionAbortedError"
+            },
+            "sortText": "09.9999.ConnectionAbortedError"
+         },
+         {
+            "label": "ConnectionRefusedError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ConnectionRefusedError"
+            },
+            "sortText": "09.9999.ConnectionRefusedError"
+         },
+         {
+            "label": "ConnectionResetError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ConnectionResetError"
+            },
+            "sortText": "09.9999.ConnectionResetError"
+         },
+         {
+            "label": "FileExistsError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "FileExistsError"
+            },
+            "sortText": "09.9999.FileExistsError"
+         },
+         {
+            "label": "FileNotFoundError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "FileNotFoundError"
+            },
+            "sortText": "09.9999.FileNotFoundError"
+         },
+         {
+            "label": "InterruptedError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "InterruptedError"
+            },
+            "sortText": "09.9999.InterruptedError"
+         },
+         {
+            "label": "IsADirectoryError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "IsADirectoryError"
+            },
+            "sortText": "09.9999.IsADirectoryError"
+         },
+         {
+            "label": "NotADirectoryError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "NotADirectoryError"
+            },
+            "sortText": "09.9999.NotADirectoryError"
+         },
+         {
+            "label": "PermissionError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "PermissionError"
+            },
+            "sortText": "09.9999.PermissionError"
+         },
+         {
+            "label": "ProcessLookupError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ProcessLookupError"
+            },
+            "sortText": "09.9999.ProcessLookupError"
+         },
+         {
+            "label": "TimeoutError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "TimeoutError"
+            },
+            "sortText": "09.9999.TimeoutError"
+         },
+         {
+            "label": "NotImplementedError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "NotImplementedError"
+            },
+            "sortText": "09.9999.NotImplementedError"
+         },
+         {
+            "label": "RecursionError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "RecursionError"
+            },
+            "sortText": "09.9999.RecursionError"
+         },
+         {
+            "label": "IndentationError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "IndentationError"
+            },
+            "sortText": "09.9999.IndentationError"
+         },
+         {
+            "label": "TabError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "TabError"
+            },
+            "sortText": "09.9999.TabError"
+         },
+         {
+            "label": "UnicodeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnicodeError"
+            },
+            "sortText": "09.9999.UnicodeError"
+         },
+         {
+            "label": "UnicodeDecodeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnicodeDecodeError"
+            },
+            "sortText": "09.9999.UnicodeDecodeError"
+         },
+         {
+            "label": "UnicodeEncodeError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnicodeEncodeError"
+            },
+            "sortText": "09.9999.UnicodeEncodeError"
+         },
+         {
+            "label": "UnicodeTranslateError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnicodeTranslateError"
+            },
+            "sortText": "09.9999.UnicodeTranslateError"
+         },
+         {
+            "label": "Warning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "Warning"
+            },
+            "sortText": "09.9999.Warning"
+         },
+         {
+            "label": "UserWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UserWarning"
+            },
+            "sortText": "09.9999.UserWarning"
+         },
+         {
+            "label": "DeprecationWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "DeprecationWarning"
+            },
+            "sortText": "09.9999.DeprecationWarning"
+         },
+         {
+            "label": "SyntaxWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "SyntaxWarning"
+            },
+            "sortText": "09.9999.SyntaxWarning"
+         },
+         {
+            "label": "RuntimeWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "RuntimeWarning"
+            },
+            "sortText": "09.9999.RuntimeWarning"
+         },
+         {
+            "label": "FutureWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "FutureWarning"
+            },
+            "sortText": "09.9999.FutureWarning"
+         },
+         {
+            "label": "PendingDeprecationWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "PendingDeprecationWarning"
+            },
+            "sortText": "09.9999.PendingDeprecationWarning"
+         },
+         {
+            "label": "ImportWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ImportWarning"
+            },
+            "sortText": "09.9999.ImportWarning"
+         },
+         {
+            "label": "UnicodeWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "UnicodeWarning"
+            },
+            "sortText": "09.9999.UnicodeWarning"
+         },
+         {
+            "label": "BytesWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "BytesWarning"
+            },
+            "sortText": "09.9999.BytesWarning"
+         },
+         {
+            "label": "ResourceWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "ResourceWarning"
+            },
+            "sortText": "09.9999.ResourceWarning"
+         },
+         {
+            "label": "EncodingWarning",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 4
+               },
+               "symbolLabel": "EncodingWarning"
+            },
+            "sortText": "09.9999.EncodingWarning"
+         },
+         {
+            "label": "True",
+            "kind": 14,
+            "sortText": "07.9999.True"
+         },
+         {
+            "label": "False",
+            "kind": 14,
+            "sortText": "07.9999.False"
+         },
+         {
+            "label": "None",
+            "kind": 14,
+            "sortText": "07.9999.None"
+         },
+         {
+            "label": "and",
+            "kind": 14,
+            "sortText": "07.9999.and"
+         },
+         {
+            "label": "or",
+            "kind": 14,
+            "sortText": "07.9999.or"
+         },
+         {
+            "label": "not",
+            "kind": 14,
+            "sortText": "07.9999.not"
+         },
+         {
+            "label": "is",
+            "kind": 14,
+            "sortText": "07.9999.is"
+         },
+         {
+            "label": "lambda",
+            "kind": 14,
+            "sortText": "07.9999.lambda"
+         },
+         {
+            "label": "yield",
+            "kind": 14,
+            "sortText": "07.9999.yield"
+         },
+         {
+            "label": "assert",
+            "kind": 14,
+            "sortText": "07.9999.assert"
+         },
+         {
+            "label": "break",
+            "kind": 14,
+            "sortText": "07.9999.break"
+         },
+         {
+            "label": "class",
+            "kind": 14,
+            "sortText": "07.9999.class"
+         },
+         {
+            "label": "continue",
+            "kind": 14,
+            "sortText": "07.9999.continue"
+         },
+         {
+            "label": "def",
+            "kind": 14,
+            "sortText": "07.9999.def"
+         },
+         {
+            "label": "del",
+            "kind": 14,
+            "sortText": "07.9999.del"
+         },
+         {
+            "label": "elif",
+            "kind": 14,
+            "sortText": "07.9999.elif"
+         },
+         {
+            "label": "else",
+            "kind": 14,
+            "sortText": "07.9999.else"
+         },
+         {
+            "label": "except",
+            "kind": 14,
+            "sortText": "07.9999.except"
+         },
+         {
+            "label": "finally",
+            "kind": 14,
+            "sortText": "07.9999.finally"
+         },
+         {
+            "label": "for",
+            "kind": 14,
+            "sortText": "07.9999.for"
+         },
+         {
+            "label": "from",
+            "kind": 14,
+            "sortText": "07.9999.from"
+         },
+         {
+            "label": "global",
+            "kind": 14,
+            "sortText": "07.9999.global"
+         },
+         {
+            "label": "if",
+            "kind": 14,
+            "sortText": "07.9999.if"
+         },
+         {
+            "label": "import",
+            "kind": 14,
+            "sortText": "07.9999.import"
+         },
+         {
+            "label": "in",
+            "kind": 14,
+            "sortText": "07.9999.in"
+         },
+         {
+            "label": "nonlocal",
+            "kind": 14,
+            "sortText": "07.9999.nonlocal"
+         },
+         {
+            "label": "pass",
+            "kind": 14,
+            "sortText": "07.9999.pass"
+         },
+         {
+            "label": "raise",
+            "kind": 14,
+            "sortText": "07.9999.raise"
+         },
+         {
+            "label": "return",
+            "kind": 14,
+            "sortText": "07.9999.return"
+         },
+         {
+            "label": "try",
+            "kind": 14,
+            "sortText": "07.9999.try"
+         },
+         {
+            "label": "while",
+            "kind": 14,
+            "sortText": "07.9999.while"
+         },
+         {
+            "label": "with",
+            "kind": 14,
+            "sortText": "07.9999.with"
+         },
+         {
+            "label": "async",
+            "kind": 14,
+            "sortText": "07.9999.async"
+         },
+         {
+            "label": "await",
+            "kind": 14,
+            "sortText": "07.9999.await"
+         },
+         {
+            "label": "case",
+            "kind": 14,
+            "sortText": "07.9999.case"
+         },
+         {
+            "label": "match",
+            "kind": 14,
+            "sortText": "07.9999.match"
+         }
+      ],
+      "isIncomplete": true
+   }
+}
+Eval in Emacs: (lsp-bridge-record-completion-items '"/home/kevin/Desktop/test.py" '"    " '"" '((:label "xx" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__doc__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__name__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__qualname__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__loader__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__package__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__spec__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__path__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__file__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__cached__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__dict__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__annotations__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "__builtins__" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "gdal" :tags () :filterText "" :insertText () :kind "Module" :annotation "Module" :insertTextFormat "" :textEdit ()) (:label "ski" :tags () :filterText "" :insertText () :kind "Module" :annotation "Module" :insertTextFormat "" :textEdit ()) (:label "np" :tags () :filterText "" :insertText () :kind "Module" :annotation "Module" :insertTextFormat "" :textEdit ()) (:label "test" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "object" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "staticmethod" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "classmethod" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "type" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "super" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "int" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "float" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "complex" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "str" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "bytes" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "bytearray" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "memoryview" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "bool" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "slice" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "tuple" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "function" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "list" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "dict" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "set" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "frozenset" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "enumerate" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "range" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "property" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "NotImplemented" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "abs" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "all" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "any" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "ascii" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "bin" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "breakpoint" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "callable" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "chr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "aiter" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "anext" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "compile" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "copyright" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "credits" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "delattr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "dir" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "divmod" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "eval" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "exec" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "exit" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "filter" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "format" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "getattr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "globals" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "hasattr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "hash" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "help" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "hex" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "id" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "input" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "iter" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "isinstance" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "issubclass" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "len" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "license" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "locals" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "map" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "max" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "min" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "next" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "oct" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "open" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "ord" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "print" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "pow" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "quit" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "reversed" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "repr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "round" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "setattr" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "sorted" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "sum" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "vars" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "zip" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "__import__" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "__build_class__" :tags () :filterText "" :insertText () :kind "Function" :annotation "Function" :insertTextFormat "" :textEdit ()) (:label "ellipsis" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "Ellipsis" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "BaseException" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "GeneratorExit" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "KeyboardInterrupt" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "SystemExit" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "Exception" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "StopIteration" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "OSError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "EnvironmentError" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "IOError" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Variable" :insertTextFormat "" :textEdit ()) (:label "ArithmeticError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "AssertionError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "AttributeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "BufferError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "EOFError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ImportError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "LookupError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "MemoryError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "NameError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ReferenceError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "RuntimeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "StopAsyncIteration" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "SyntaxError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "SystemError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "TypeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ValueError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "FloatingPointError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "OverflowError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ZeroDivisionError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ModuleNotFoundError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "IndexError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "KeyError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnboundLocalError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "BlockingIOError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ChildProcessError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ConnectionError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "BrokenPipeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ConnectionAbortedError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ConnectionRefusedError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ConnectionResetError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "FileExistsError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "FileNotFoundError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "InterruptedError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "IsADirectoryError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "NotADirectoryError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "PermissionError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ProcessLookupError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "TimeoutError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "NotImplementedError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "RecursionError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "IndentationError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "TabError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnicodeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnicodeDecodeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnicodeEncodeError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnicodeTranslateError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "Warning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UserWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "DeprecationWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "SyntaxWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "RuntimeWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "FutureWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "PendingDeprecationWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ImportWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "UnicodeWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "BytesWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "ResourceWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "EncodingWarning" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "True" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "False" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "None" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "and" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "or" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "not" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "is" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "lambda" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "yield" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "assert" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "break" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "class" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "continue" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "def" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "del" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "elif" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "else" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "except" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "finally" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "for" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "from" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "global" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "if" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "import" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "in" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "nonlocal" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "pass" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "raise" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "return" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "try" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "while" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "with" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "async" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "await" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "case" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ()) (:label "match" :tags () :filterText "" :insertText () :kind "Keyword" :annotation "Keyword" :insertTextFormat "" :textEdit ())) '("." "["))
+
+--- Recv notification: textDocument/publishDiagnostics
+received: length = 142; data = b'(call 208 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 4) (:line 6 :character 4) 0 "s" (:line 6 :character 5) "s" "    s"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 208 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 4) (:line 6 :character 4) 0 "s" (:line 6 :character 5) "s" "    s"))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(208, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 4], [Symbol(':line'), 6, Symbol(':character'), 4], 0, 's', [Symbol(':line'), 6, Symbol(':character'), 5], 's', '    s'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 208, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 208, None)
+
+--- Send (notification): textDocument/didChange
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+received: length = 80; data = b'(call 209 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 5)))\n'
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 3
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 6,
+                  "character": 4
+               },
+               "end": {
+                  "line": 6,
+                  "character": 4
+               }
+            },
+            "rangeLength": 0,
+            "text": "s"
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 209 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 5)))\n')
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(209, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 5]])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 209, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 209, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 143; data = b'(call 210 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 5) (:line 6 :character 5) 0 "k" (:line 6 :character 6) "k" "    sk"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 210 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 5) (:line 6 :character 5) 0 "k" (:line 6 :character 6) "k" "    sk"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(210, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 5], [Symbol(':line'), 6, Symbol(':character'), 5], 0, 'k', [Symbol(':line'), 6, Symbol(':character'), 6], 'k', '    sk'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 210, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 210, None)
+receiving...
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+received: length = 80; data = b'(call 211 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 6)))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 211 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 6)))\n')
+
+--- Send (notification): textDocument/didChange
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(211, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 6]])
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 4
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 6,
+                  "character": 5
+               },
+               "end": {
+                  "line": 6,
+                  "character": 5
+               }
+            },
+            "rangeLength": 0,
+            "text": "k"
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 211, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 211, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Send (10275): textDocument/completion
+{
+   "id": 10275,
+   "method": "textDocument/completion",
+   "params": {
+      "position": {
+         "line": 6,
+         "character": 6
+      },
+      "context": {
+         "triggerKind": 1
+      },
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py"
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Recv response (10275): textDocument/completion
+{
+   "jsonrpc": "2.0",
+   "id": 10275,
+   "result": {
+      "items": [
+         {
+            "label": "ski",
+            "kind": 9,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 6
+               },
+               "symbolLabel": "ski"
+            },
+            "sortText": "09.9999.ski"
+         },
+         {
+            "label": "ProcessLookupError",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 6
+               },
+               "symbolLabel": "ProcessLookupError"
+            },
+            "sortText": "09.9999.ProcessLookupError"
+         },
+         {
+            "label": "_SortKind",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 6
+               },
+               "autoImportText": "from numpy import _SortKind",
+               "symbolLabel": "_SortKind"
+            },
+            "sortText": "12.9999._SortKind",
+            "detail": "Auto-import",
+            "documentation": {
+               "kind": "plaintext",
+               "value": "from numpy import _SortKind"
+            },
+            "textEdit": {
+               "range": {
+                  "start": {
+                     "line": 6,
+                     "character": 4
+                  },
+                  "end": {
+                     "line": 6,
+                     "character": 6
+                  }
+               },
+               "newText": "np._SortKind"
+            },
+            "additionalTextEdits": []
+         },
+         {
+            "label": "SupportsKeysAndGetItem",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 6
+               },
+               "autoImportText": "from _typeshed import SupportsKeysAndGetItem",
+               "symbolLabel": "SupportsKeysAndGetItem"
+            },
+            "sortText": "12.9999.SupportsKeysAndGetItem",
+            "detail": "Auto-import",
+            "documentation": {
+               "kind": "plaintext",
+               "value": "from _typeshed import SupportsKeysAndGetItem"
+            },
+            "textEdit": {
+               "range": {
+                  "start": {
+                     "line": 6,
+                     "character": 4
+                  },
+                  "end": {
+                     "line": 6,
+                     "character": 6
+                  }
+               },
+               "newText": "SupportsKeysAndGetItem"
+            },
+            "additionalTextEdits": [
+               {
+                  "range": {
+                     "start": {
+                        "line": 0,
+                        "character": 0
+                     },
+                     "end": {
+                        "line": 0,
+                        "character": 0
+                     }
+                  },
+                  "newText": "from _typeshed import SupportsKeysAndGetItem\n"
+               }
+            ]
+         }
+      ],
+      "isIncomplete": true
+   }
+}
+Eval in Emacs: (lsp-bridge-record-completion-items '"/home/kevin/Desktop/test.py" '"    sk" '"" '((:label "ski" :tags () :filterText "" :insertText () :kind "Module" :annotation "Module" :insertTextFormat "" :textEdit ()) (:label "ProcessLookupError" :tags () :filterText "" :insertText () :kind "Class" :annotation "Class" :insertTextFormat "" :textEdit ()) (:label "_SortKind" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Auto-import" :insertTextFormat "" :textEdit (:range (:start (:line 6 :character 4) :end (:line 6 :character 6)) :newText "np._SortKind")) (:label "SupportsKeysAndGetItem" :tags () :filterText "" :insertText () :kind "Class" :annotation "Auto-import" :insertTextFormat "" :textEdit (:range (:start (:line 6 :character 4) :end (:line 6 :character 6)) :newText "SupportsKeysAndGetItem"))) '("." "["))
+received: length = 144; data = b'(call 212 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 6) (:line 6 :character 6) 0 "i" (:line 6 :character 7) "i" "    ski"))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 212 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 6) (:line 6 :character 6) 0 "i" (:line 6 :character 7) "i" "    ski"))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(212, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 6], [Symbol(':line'), 6, Symbol(':character'), 6], 0, 'i', [Symbol(':line'), 6, Symbol(':character'), 7], 'i', '    ski'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 212, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 212, None)
+receiving...
+received: length = 80; data = b'(call 213 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 7)))\n'
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 213 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 7)))\n')
+receiving...
+
+--- Send (notification): textDocument/didChange
+(AutoLog) Called: ThreadingEPCHandler._handle_call(213, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 7]])
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 5
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 6,
+                  "character": 6
+               },
+               "end": {
+                  "line": 6,
+                  "character": 6
+               }
+            },
+            "rangeLength": 0,
+            "text": "i"
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 213, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 213, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Send (9741): textDocument/completion
+{
+   "id": 9741,
+   "method": "textDocument/completion",
+   "params": {
+      "position": {
+         "line": 6,
+         "character": 7
+      },
+      "context": {
+         "triggerKind": 1
+      },
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py"
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Recv response (9741): textDocument/completion
+{
+   "jsonrpc": "2.0",
+   "id": 9741,
+   "result": {
+      "items": [
+         {
+            "label": "ski",
+            "kind": 9,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 7
+               },
+               "symbolLabel": "ski"
+            },
+            "sortText": "09.9999.ski"
+         },
+         {
+            "label": "_SortKind",
+            "kind": 6,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 7
+               },
+               "autoImportText": "from numpy import _SortKind",
+               "symbolLabel": "_SortKind"
+            },
+            "sortText": "12.9999._SortKind",
+            "detail": "Auto-import",
+            "documentation": {
+               "kind": "plaintext",
+               "value": "from numpy import _SortKind"
+            },
+            "textEdit": {
+               "range": {
+                  "start": {
+                     "line": 6,
+                     "character": 4
+                  },
+                  "end": {
+                     "line": 6,
+                     "character": 7
+                  }
+               },
+               "newText": "np._SortKind"
+            },
+            "additionalTextEdits": []
+         },
+         {
+            "label": "SupportsKeysAndGetItem",
+            "kind": 7,
+            "data": {
+               "workspacePath": "/home/kevin/Desktop/test.py",
+               "filePath": "/home/kevin/Desktop/test.py",
+               "position": {
+                  "line": 6,
+                  "character": 7
+               },
+               "autoImportText": "from _typeshed import SupportsKeysAndGetItem",
+               "symbolLabel": "SupportsKeysAndGetItem"
+            },
+            "sortText": "12.9999.SupportsKeysAndGetItem",
+            "detail": "Auto-import",
+            "documentation": {
+               "kind": "plaintext",
+               "value": "from _typeshed import SupportsKeysAndGetItem"
+            },
+            "textEdit": {
+               "range": {
+                  "start": {
+                     "line": 6,
+                     "character": 4
+                  },
+                  "end": {
+                     "line": 6,
+                     "character": 7
+                  }
+               },
+               "newText": "SupportsKeysAndGetItem"
+            },
+            "additionalTextEdits": [
+               {
+                  "range": {
+                     "start": {
+                        "line": 0,
+                        "character": 0
+                     },
+                     "end": {
+                        "line": 0,
+                        "character": 0
+                     }
+                  },
+                  "newText": "from _typeshed import SupportsKeysAndGetItem\n"
+               }
+            ]
+         }
+      ],
+      "isIncomplete": true
+   }
+}
+Eval in Emacs: (lsp-bridge-record-completion-items '"/home/kevin/Desktop/test.py" '"    ski" '"" '((:label "ski" :tags () :filterText "" :insertText () :kind "Module" :annotation "Module" :insertTextFormat "" :textEdit ()) (:label "_SortKind" :tags () :filterText "" :insertText () :kind "Variable" :annotation "Auto-import" :insertTextFormat "" :textEdit (:range (:start (:line 6 :character 4) :end (:line 6 :character 7)) :newText "np._SortKind")) (:label "SupportsKeysAndGetItem" :tags () :filterText "" :insertText () :kind "Class" :annotation "Auto-import" :insertTextFormat "" :textEdit (:range (:start (:line 6 :character 4) :end (:line 6 :character 7)) :newText "SupportsKeysAndGetItem"))) '("." "["))
+received: length = 145; data = b'(call 214 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 7) (:line 6 :character 7) 0 "." (:line 6 :character 8) "." "    ski."))\n'
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 214 change_file ("/home/kevin/Desktop/test.py" (:line 6 :character 7) (:line 6 :character 7) 0 "." (:line 6 :character 8) "." "    ski."))\n')
+(AutoLog) Called: ThreadingEPCHandler._handle_call(214, Symbol('change_file'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 7], [Symbol(':line'), 6, Symbol(':character'), 7], 0, '.', [Symbol(':line'), 6, Symbol(':character'), 8], '.', '    ski.'])
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 214, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 214, None)
+receiving...
+received: length = 80; data = b'(call 215 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 8)))\n'
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+(AutoLog) Called: ThreadingEPCHandler._handle(b'(call 215 change_cursor ("/home/kevin/Desktop/test.py" (:line 6 :character 8)))\n')
+
+--- Send (notification): textDocument/didChange
+receiving...
+(AutoLog) Called: ThreadingEPCHandler._handle_call(215, Symbol('change_cursor'), ['/home/kevin/Desktop/test.py', [Symbol(':line'), 6, Symbol(':character'), 8]])
+{
+   "method": "textDocument/didChange",
+   "params": {
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py",
+         "version": 6
+      },
+      "contentChanges": [
+         {
+            "range": {
+               "start": {
+                  "line": 6,
+                  "character": 7
+               },
+               "end": {
+                  "line": 6,
+                  "character": 7
+               }
+            },
+            "rangeLength": 0,
+            "text": "."
+         }
+      ]
+   },
+   "jsonrpc": "2.0"
+}
+(AutoLog) Returns: ThreadingEPCHandler._handle_call(...) = ['return', 215, None]
+(AutoLog) Called: ThreadingEPCHandler._send('return', 215, None)
+(AutoLog) Returns: ThreadingEPCHandler._send(...) = None
+(AutoLog) Returns: ThreadingEPCHandler._handle(...) = None
+
+--- Send (40031): textDocument/completion
+{
+   "id": 40031,
+   "method": "textDocument/completion",
+   "params": {
+      "position": {
+         "line": 6,
+         "character": 8
+      },
+      "context": {
+         "triggerCharacter": ".",
+         "triggerKind": 2
+      },
+      "textDocument": {
+         "uri": "file:///home/kevin/Desktop/test.py"
+      }
+   },
+   "jsonrpc": "2.0"
+}
+
+--- Recv response (40031): textDocument/completion
+{
+   "jsonrpc": "2.0",
+   "id": 40031,
+   "result": {
+      "items": [],
+      "isIncomplete": true
+   }
+}
+Eval in Emacs: (lsp-bridge-record-completion-items '"/home/kevin/Desktop/test.py" '"" '"" '() '("." "["))
+
+--- Recv notification: textDocument/publishDiagnostics
